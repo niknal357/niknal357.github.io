@@ -3,6 +3,7 @@
 <head>
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
 </head>
 </head>
 
@@ -10,32 +11,94 @@
     <div class="doubleflex">
         <div class="flexcomponent">
             <img src="logo.png" class="logo">
-            <h1>Hi, I'm Nikita</h1>
-            <h2>(niknal357)</h2>
-            <p>
-                I am a 16 year old developer. I am a member of the M-Tech Discord server and I am currently working on a few projects with them.
-            </p>
+            <h1>Hi, I'm&nbsp;Nikita</h1>
+            <!-- <h2>(niknal357)</h2> -->
+            <h2>
+                I&nbsp;like&nbsp;programming, AI,&nbsp;and video&nbsp;games.
+            </h2>
             <div class="socialsflex">
                 <!-- github -->
                 <div class="socialiconcontainer" onclick="window.location='https:\/\/github.com/niknal357'">
                     <img src="https://img.icons8.com/ios/128/000000/github.png" alt="github" class="icon">
-                    <p>Developer</p>
+                    <div>Developer</div>
                 </div>
                 <!-- discord -->
-                <div class="socialiconcontainer" onclick="window.location=''">
+                <div class="socialiconcontainer" onclick="window.location='https:\/\/discord.gg\/FSx2xKjGcY'">
                     <img src="https://img.icons8.com/ios/128/000000/discord-logo.png" alt="discord" class="icon">
-                    <p>M-Tech Member</p>
+                    <div>M-Tech Member</div>
                 </div>
             </div>
         </div>
         <div class="flexcomponent paragraph">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices neque vitae facilisis sollicitudin. Sed at dapibus urna, vel sagittis leo. Vestibulum vestibulum ex vitae massa hendrerit interdum. Mauris vestibulum laoreet mi convallis placerat. Donec non pharetra felis. Mauris eu lobortis eros. Maecenas eu commodo eros, aliquam porta arcu. Aenean sed ante non eros vestibulum ornare a tincidunt tellus. Fusce tellus justo, facilisis in semper nec, fermentum a urna. Vestibulum vel venenatis est, a suscipit orci. Vivamus elementum quam vitae mi egestas, vitae facilisis est tempor. Morbi fermentum ligula ligula, id tempus augue auctor sit amet.<br><br>
-
-                Aliquam maximus, ligula sit amet consectetur ultrices, eros ante bibendum massa, nec vehicula nisi tortor pulvinar neque. Vivamus imperdiet consectetur lobortis. Nunc accumsan blandit justo in malesuada. Aliquam venenatis convallis enim, in congue ex rutrum ac. In nec malesuada lectus. Quisque euismod, mi non sagittis malesuada, sem diam dapibus nisl, et luctus urna ante vel mi. Suspendisse at feugiat dui, in porttitor lorem.
-            </p>
+            <div>
+                My dad introduced me to programming when I was 6. He showed me how to print things in the console with Python, and I was hooked. Python remains my favorite language, but I also began learning Java, C++, and JS/TS (along with all the goofy frameworks).
+            </div><br>
+            <div>
+                I found the game Scrap Mechanic a very long time ago, and the moment I got my own Windows laptop at the age of 12, and immediately was hooked. At the time of writing this, I have 1300 hours in the game as of writing this. In the M-Tech Discord server, we work on massive Scrap Mechanic projects, and I do my best to contribute.
+            </div><br>
+            <div>
+                I'm also starting to learn web development, and I'm slowly but surely getting the hang of HTML and CSS (as you could tell by the jankiness of this page).
+            </div>
+        </div>
+        <div class="heading">
+            <h1 class="nopadding">Projects</h1>
+        </div>
+        <div class="flexcomponent">
+            <div class="card blue" onclick="window.location='https:\/\/thelionsroar.ch'">
+                <div class="card-details">
+                    <p class="text-title">The Lion's Roar</p>
+                    <p class="text-body">I am the co-developer of my school's internal news site, along with Maxime Tschopp.</p>
+                </div>
+                <button class="card-button">Go to Website</button>
+            </div>
+        </div>
+        <div class="flexcomponent">
+            <div class="card red" onclick="window.location='https:\/\/github.com\/niknal357\/tictac2'">
+                <div class="card-details">
+                    <p class="text-title">Gomoku AI</p>
+                    <p class="text-body">I designed a Gomoku (5-in-a-row) AI that you can play against.</p>
+                </div>
+                <button class="card-button">Go to Repo</button>
+            </div>
+        </div>
+        <div class="flexcomponent">
+            <div class="card yellow" onclick="window.location='https:\/\/steamcommunity.com\/sharedfiles\/filedetails\/?id=2934394100'">
+                <div class="card-details">
+                    <p class="text-title">Scrap Mechanic Computer</p>
+                    <p class="text-body">A 16-bit computer in Scrap Mechanic.</p>
+                </div>
+                <button class="card-button">Go to Workshop</button>
+            </div>
+        </div>
+        <div class="flexcomponent">
+            <div class="card blue" onclick="window.location='https:\/\/niknal357.github.io\/uwufyer_translator_site\/'">
+                <div class="card-details">
+                    <p class="text-title">UwU-fyer Site</p>
+                    <p class="text-body">This is a translator that turns plain English into UwU.</p>
+                </div>
+                <button class="card-button">Go Suffer</button>
+            </div>
+        </div>
+        <div class="flexcomponent">
+            <div class="card green" onclick="window.location='https:\/\/github.com\/niknal357\/uwufyer\/releases'">
+                <div class="card-details">
+                    <p class="text-title">UwU-fyer Extension</p>
+                    <p class="text-body">Same thing, but now its on every website.</p>
+                </div>
+                <button class="card-button">Go Suffer</button>
+            </div>
+        </div>
+        <div class="flexcomponent">
+            <div class="card red" onclick="window.location='https:\/\/steamcommunity.com\/sharedfiles\/filedetails\/?id=2802885316'">
+                <div class="card-details">
+                    <p class="text-title">Scrap Mechanic 3D Scanner/Printer</p>
+                    <p class="text-body">A 3d scanner that simeltaneously prints what it is scanning.</p>
+                </div>
+                <button class="card-button">Go to Workshop</button>
+            </div>
         </div>
     </div>
 </body>
 
 </html>
+<!--  -->
