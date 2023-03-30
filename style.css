@@ -1,0 +1,101 @@
+:root {
+    --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --background-color-1: #2e005b;
+    --background-color-2: #600000;
+    --text-color: #fff;
+    --title-size: 4rem;
+    --subtitle-size: 2.4rem;
+    --text-size: 1.5rem;
+}
+
+body {
+    background-image: linear-gradient(-45deg, var(--background-color-1), var(--background-color-2));
+    color: var(--text-color);
+    font-size: var(--text-size);
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size: var(--title-size);
+    width: 100%;
+    /* center text */
+    text-align: center;
+
+}
+
+h2 {
+    font-size: var(--subtitle-size);
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    font-size: var(--text-size);
+}
+
+.doubleflex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.flexcomponent {
+    flex: 1 1 50%;
+    /* center content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* max-width: 40%; */
+    margin: 50px;
+    max-width: 40%;
+}
+
+
+.paragraph {
+    /* max-width: 40% */
+}
+
+.breakline {
+    /* width of parent */
+    width: 100%;
+}
+
+.socialsflex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    filter: brightness(0) invert(1);
+}
+
+.socialiconcontainer {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.socialiconcontainer:hover {
+    transform: scale(1.1);
+
+}
+
+.logo {
+    width: 1000px;
+}
