@@ -147,3 +147,7 @@ div {
 .nopadding {
     padding: 0;
 }
+
+.subheading {
+    margin-bottom: 30px;
+}
